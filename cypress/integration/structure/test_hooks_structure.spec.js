@@ -14,6 +14,8 @@ describe('Test Structure', () => {
       cy.get('[data-test="password"]').type('secret_sauce');
       cy.get('[data-test="login-button"]').click();
       cy.get('.title').should('have.text', 'Products');
+      cy.get('#react-burger-menu-btn').click();
+      cy.get('#logout_sidebar_link').click();
     });
   });
 
@@ -24,6 +26,14 @@ describe('Test Structure', () => {
       cy.get('[data-test="login-button"]').click();
       cy.get('[data-test="error"]').should('have.text', 'Epic sadface: Username and password do not match any user in this service')
     });
+  });
+
+  afterEach(function(){
+    cy.url('').should('eq', Cypress.config('baseUrl'));
+  });
+
+  after(function(){
+      cy.log('This code will be executed once all test execution is done');
   });
 
 });
