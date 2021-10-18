@@ -1,0 +1,24 @@
+{
+  "name": "rsch-e2e-cypress",
+  "version": "1.0.0",
+  "description": "ulak-ulik cypress framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "cypress:open": "cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tguharjo/rsch-e2e-cypress.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tguharjo/rsch-e2e-cypress/issues"
+  },
+  "homepage": "https://github.com/tguharjo/rsch-e2e-cypress#readme",
+  "devDependencies": {
+    "cypress": "^8.6.0"
+  }
+}
